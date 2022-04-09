@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600&family=Inter:wght@400;700&family=Karla:wght@200;400&family=Lexend+Deca&family=Nunito:wght@200&family=Open+Sans:wght@300;700;800&family=Outfit:wght@300;400;600&family=Overpass:wght@400;700&family=Poppins:wght@200;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Karla:wght@200;400&family=Lexend+Deca&family=Nunito:wght@200&family=Open+Sans:wght@300;700;800&family=Outfit:wght@300;400;600&family=Overpass:wght@400;700&family=Poppins:wght@200;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white-phs: hsla(0, 0%, 100%, 0.65);
+    --very-ligth-gray: hsl(0, 0%, 95%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--very-ligth-gray);
+}
+
+.flex__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card {
+  height: 50vh;
+  width: 50vh;
+  padding: 35px;
+}
+
+.card__yellow {
+  background-color: var(--bright-orange);
+  border-radius: 5px 5px 0 0;
+}
+
+.card__cyan {
+    background-color: var(--dark-cyan);
+}
+
+.card__dark-cyan {
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 0 5px 5px;
+}
+
+.car__image {
+    width: 55px;
+    height: 40px;
+}
+
+.card__title {
+    color: var(--very-ligth-gray);
+    font-family: Big Shoulders Display;
+    font-weight: 700;
+    font-size: 28px;
+    padding: 5px 0 5px 0;
+}
+
+p {
+    color: var(--transparent-white-phs);
+    font-family: Lexend Deca;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+button {
+    background-color: var(--very-ligth-gray);
+    border: none;
+    width: 120px;
+    height: 40px;
+    border-radius: 40px;
+    margin-top: 15px;
+    font-family: Lexend Deca;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: transparent;
+    color: #fff;
+    border: solid 2px #fff;
+}
+
+.card__button-yellow {
+    color: var(--bright-orange);
+}
+
+.card__button-cyan {
+    color: var(--dark-cyan);
+}
+
+.card__button-dark {
+    color: var(--very-dark-cyan);
+}
+
+@media (min-width: 1000px) {
+    .flex__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        height: 95vh;
+    }
+
+    .card {
+        height: 75vh;
+        width: 48vh;
+        padding: 55px;
+    }
+     
+    .card__yellow {
+        border-radius: 5px 0 0 5px;
+    }
+
+    .card__dark-cyan {
+        border-radius: 0 5px 5px 0;
+    }
+
+    .car__image {
+        width: 65px;
+        height: 45px;
+    }
+
+    .card__title {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 25px;
+        font-weight: 400;
+    }
+
+    button {
+        margin-top: 55px;
+        width: 155px;
+        height: 45px;
+        font-size: 15px;
+    }
+}
